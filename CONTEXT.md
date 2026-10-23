@@ -5,8 +5,8 @@ Declarative description of a single home server: the host it runs on and the app
 ## Declarations
 
 **Homelab declaration**:
-The one file (`homelab.yml`) stating what the homelab is: hosts, domain, pools, locations, networks, house rules, external services.
-_Avoid_: global vars, group_vars
+The one file (`homelab.yml`) stating what the homelab is: domain, LAN address book, pools, locations, networks, house rules, external services. Covers the apps server only.
+_Avoid_: global vars, group_vars, inventory
 
 **Stack**:
 One app as a unit of deployment: its containers, data locations, exposure and metrics, declared in `stacks/<slug>/stack.yml`.
