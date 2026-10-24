@@ -69,6 +69,9 @@ The committed, generated file (`generated/services.yml`) holding routes, scrape 
 **Consumer**:
 A shared service configured only from the services index (reverse proxy, metrics collector, dashboard).
 
+**Route**:
+One host name on the reverse proxy forwarding to a container or external service, derived from an `expose` entry.
+
 **External service**:
 Something reachable through the reverse proxy but not deployed as a stack (e.g. Pi-hole on the Pi).
 
