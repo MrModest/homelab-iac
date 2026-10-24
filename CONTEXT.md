@@ -72,6 +72,9 @@ A shared service configured only from the services index (reverse proxy, metrics
 **Route**:
 One host name on the reverse proxy forwarding to a container or external service, derived from an `expose` entry.
 
+**Egress**:
+A container's declared need to reach beyond the host (internet or LAN), with a reason. Without it, a container reaches only its own stack and the consumers wired to it.
+
 **External service**:
 Something reachable through the reverse proxy but not deployed as a stack (e.g. Pi-hole on the Pi).
 
