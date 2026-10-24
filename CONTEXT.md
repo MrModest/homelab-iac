@@ -30,6 +30,19 @@ _Avoid_: exception, override
 **Settings**:
 Stack-scoped named values shared by env, commands and content templates.
 
+## Access
+
+**Admin user**:
+The one account that logs in over SSH, used by both the operator and Ansible.
+_Avoid_: ssh user, ansible user
+
+**Recovery user**:
+A console-only account with its own password, kept for physical access when SSH fails. Never reachable over SSH.
+
+**Runtime user**:
+The account (`apps`) that containers run as and that owns stack data by default.
+_Avoid_: docker user, service user
+
 ## Storage
 
 **Pool**:
